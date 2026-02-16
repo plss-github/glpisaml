@@ -7,7 +7,7 @@ on:
       - main
 
 env:
-  ${{ env.PROJECT_NAME }}: ${{ github.event.repository.name }}
+  pROJECT_NAME: ${{ github.event.repository.name }}
 
 permissions:
   contents: write
