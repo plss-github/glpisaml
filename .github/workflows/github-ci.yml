@@ -7,7 +7,7 @@ on:
       - main
 
 env:
-  PROJECT_NAME: ${{ github.event.repository.name }}
+  ${{ env.PROJECT_NAME }}: ${{ github.event.repository.name }}
 
 permissions:
   contents: write
@@ -30,16 +30,16 @@ jobs:
         run: |
           git archive \
             --format=tar.gz \
-            --prefix=$PROJECT_NAME/ \
-            -o $PROJECT_NAME.tar.gz \
+            --prefix=$${{ env.PROJECT_NAME }}/ \
+            -o $${{ env.PROJECT_NAME }}.tar.gz \
           HEAD
 
       - name: Criar Release no GitHub
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.vars.outputs.version }}
-          name: "GLPI Plugin $PROJECT_NAME ${{ steps.vars.outputs.version }}"
+          name: "GLPI Plugin $${{ env.PROJECT_NAME }} ${{ steps.vars.outputs.version }}"
           files: |
-            $PROJECT_NAME.tar.gz
+            $${{ env.PROJECT_NAME }}.tar.gz
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
