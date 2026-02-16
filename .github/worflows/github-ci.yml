@@ -1,0 +1,45 @@
+# .github/workflows/github-ci.yml
+name: Release GLPI Plugin
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  IMAGE_NAME: ${{ github.event.repository.name }}
+
+permissions:
+  contents: write
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v4
+
+      - name: Definir versão da release
+        id: vars
+        run: |
+          VERSION=$(date +"%Y.%m.%d-%H%M")
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Criar tar.gz do repositório
+        run: |
+          git archive \
+            --format=tar.gz \
+            --prefix=$PROJECT_NAME/ \
+            -o $PROJECT_NAME.tar.gz \
+          HEAD
+
+      - name: Criar Release no GitHub
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.vars.outputs.version }}
+          name: "GLPI Plugin $PROJECT_NAME ${{ steps.vars.outputs.version }}"
+          files: |
+            $PROJECT_NAME.tar.gz
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
