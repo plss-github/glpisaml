@@ -1,0 +1,119 @@
+<root>
+<name>glpisaml</name>
+<key>glpisaml</key>
+<state>Stable</state>
+<logo>https://raw.githubusercontent.com/DonutsNL/glpisaml/refs/heads/main/donut.png</logo>
+<description>
+    <short>
+        <en>Extends GLPI10 with SSO support using SAMLv2. The GLPI10 version of the plugin is per 10-10-2025 no longer 
+            activerly maintained. You are therefore STRONGLY advised to update to GLPI11 and use the SAMLSSO
+            plugin instead.</en>
+    </short>
+    <long>
+        <en>Glpisaml provides SSO (MFA) support using SAML. Glpisaml is written specifically for GLPI10 and is not
+            and will not be compatible with GLPI9 or GLPI11. The plugin allows you to configure multiple IDPs
+            idealy for IT companies that want to support SSO integration with multiple environments. SAML 
+            Configuration is done via the GLPI UI. Plugin supports Just-in-time user creation and simple rules to
+            provision newly created users. For questions join our discord at: https://discord.gg/KyMdkqJcGz. 
+            If you find an issue, please register it at our Github repo.
+        </en>
+        <fr>Glpisaml offre une prise en charge SSO (MFA) en utilisant SAML. Glpisaml est écrit spécifiquement pour
+             GLPI10 et n'est pas et ne sera pas compatible avec GLPI9 ou GLPI11. Le plugin permet de configurer 
+             plusieurs IdP, ce qui est idéal pour les entreprises informatiques qui souhaitent prendre en charge 
+             l'intégration SSO avec de multiples environnements. La configuration SAML s'effectue via l'interface 
+             utilisateur de GLPI. Le plugin prend en charge la création d'utilisateurs "Just-in-time" et des règles 
+             simples pour provisionner les utilisateurs nouvellement créés. Pour toute question, rejoignez notre 
+             Discord à l'adresse : https://discord.gg/KyMdkqJcGz. Si vous rencontrez un problème, 
+             veuillez le signaler sur notre dépôt Github.
+        </fr>
+        <es>Glpisaml ofrece soporte para SSO (MFA) utilizando SAML. Glpisaml está escrito específicamente para GLPI10
+             y no es ni será compatible con GLPI9 o GLPI11. El plugin permite configurar múltiples IdP, lo que es ideal
+             para empresas de TI que deseen dar soporte a la integración SSO con múltiples entornos. La configuración
+            de SAML se realiza a través de la interfaz de usuario de GLPI. El plugin admite la creación de usuarios
+            "Just-in-time" y reglas sencillas para aprovisionar a los usuarios recién creados. Si tienes preguntas,
+            únete a nuestro Discord en: https://discord.gg/KyMdkqJcGz. Si encuentras un problema, por favor, 
+            regístralo en nuestro repositorio de Github.
+        </es>
+    </long>
+</description>
+<homepage>https://github.com/DonutsNL/glpisaml/wiki/</homepage>
+<download>https://github.com/DonutsNL/glpisaml/releases/</download>
+<issues>https://github.com/DonutsNL/glpisaml/issues</issues>
+<readme>https://github.com/DonutsNL/glpisaml/raw/README.md</readme>
+<authors>
+    <author>Chris Gralike</author>
+</authors>
+<versions>
+    <version>
+        <num>1.1.12</num>
+        <compatibility>~10.0.0</compatibility>
+        <download_url>https://github.com/DonutsNL/glpisaml/releases/download/v1.1.12/glpisaml.zip</download_url>
+    </version>
+    <version>
+        <num>1.1.10</num>
+        <compatibility>~10.0.0</compatibility>
+        <download_url>https://codeberg.org/QuinQuies/glpisaml/releases/download/v1.1.10/glpisaml.zip</download_url>
+    </version>
+    <version>
+        <num>1.1.9</num>
+        <compatibility>~10.0.0</compatibility>
+        <download_url>https://codeberg.org/QuinQuies/glpisaml/releases/download/v1.1.9/glpisaml.zip</download_url>
+    </version>
+    <version>
+        <num>1.1.6</num>
+        <compatibility>~10.0.0</compatibility>
+        <download_url>https://codeberg.org/QuinQuies/glpisaml/releases/download/v1.1.6/glpisaml.zip</download_url>
+    </version>
+    <version>
+        <num>1.1.5</num>
+        <compatibility>~10.0.0</compatibility>
+        <download_url>https://codeberg.org/QuinQuies/glpisaml/releases/download/v1.1.5/glpisaml.zip</download_url>
+    </version>
+    <version>
+        <num>1.1.4</num>
+        <compatibility>~10.0.0</compatibility>
+        <download_url>https://codeberg.org/QuinQuies/glpisaml/releases/download/v1.1.4/glpisaml.zip</download_url>
+    </version>
+    <version>
+        <num>1.1.3</num>
+        <compatibility>~10.0.0</compatibility>
+        <download_url>https://codeberg.org/QuinQuies/glpisaml/releases/download/v1.1.3/glpisaml.zip</download_url>
+    </version>
+    <version>
+        <num>1.1.2</num>
+        <compatibility>~10.0.0</compatibility>
+        <download_url>https://codeberg.org/QuinQuies/glpisaml/releases/download/v1.1.2/glpisaml.zip</download_url>
+    </version>
+    <version>
+        <num>1.1.1</num>
+        <compatibility>~10.0.0</compatibility>
+        <download_url>https://codeberg.org/QuinQuies/glpisaml/releases/download/v1.1.1/glpisaml.zip</download_url>
+    </version>
+    <version>
+        <num>1.1.0</num>
+        <compatibility>~10.0.0</compatibility>
+        <download_url>https://codeberg.org/QuinQuies/glpisaml/releases/download/v1.1.0/glpisaml.zip</download_url>
+    </version>
+</versions>
+<langs>
+    <lang>en_GB</lang>
+    <lang>fr_FR</lang>
+    <lang>nl_NL</lang>
+</langs>
+<license>GPLv3+</license>
+<tags>
+    <en>
+        <tag>Management</tag>
+        <tag>Setup</tag>
+        <tag>Authentication</tag>
+    </en>
+</tags>
+<screenshots>
+    <screenshot>https://raw.githubusercontent.com/DonutsNL/glpisaml/refs/heads/main/templates/images/glpisaml1.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/DonutsNL/glpisaml/refs/heads/main/templates/images/glpisaml2.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/DonutsNL/glpisaml/refs/heads/main/templates/images/glpisaml3.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/DonutsNL/glpisaml/refs/heads/main/templates/images/glpisaml4.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/DonutsNL/glpisaml/refs/heads/main/templates/images/glpisaml5.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/DonutsNL/glpisaml/refs/heads/main/templates/images/glpisaml6.png</screenshot>
+</screenshots>
+</root>

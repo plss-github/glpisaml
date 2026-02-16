@@ -1,1 +1,3 @@
-# saml-glpi-plugion
+# GLPI SAML
+
+DEBUG PLUGIN
