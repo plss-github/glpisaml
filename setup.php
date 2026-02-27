@@ -51,7 +51,7 @@ use GlpiPlugin\Glpisaml\RuleSamlCollection;
 // Setup constants
 define("PLUGIN_GLPISAML_VERSION", "1.1.12");
 define("PLUGIN_GLPISAML_MIN_GLPI", "10.0.11"); // Min required GLPI version
-define("PLUGIN_GLPISAML_MAX_GLPI", "10.9.99"); // Max GLPI compat version
+define("PLUGIN_GLPISAML_MAX_GLPI", "11.9.99"); // Max GLPI compat version
 define("PLUGIN_NAME", "glpisaml"); // Plugin name
 // Directories
 define("PLUGIN_GLPISAML_WEBDIR", Plugin::getWebDir(PLUGIN_NAME, false)); // Plugin web directory
